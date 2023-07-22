@@ -5,10 +5,23 @@
         <field name="model">crm.lead</field>
         <field name="inherit_id" ref="crm.crm_lead_view_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='date_deadline']" position="after">
-                <field name="is_new_customer"/>
-                <field name="customer_segment"/>
-                <field name="product_segment_id"/>
+            <xpath expr="//group/group" position="after">
+                <group>
+                    <field name="is_new_customer"/>
+                    <field name="customer_segment"/>
+                    <field name="product_segment_id"/>
+                </group>
+            </xpath>
+            <xpath expr="//page[@name='lead']" position="after">
+                <page string="Task Progress">
+                    <field name="project_task_ids">
+                        <tree>
+                            <field name="name"/>
+                            <field name="date_deadline"/>
+                            <field name="stage_id"/>
+                        </tree>
+                    </field>
+                </page>
             </xpath>
         </field>
     </record>

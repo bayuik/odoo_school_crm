@@ -6,6 +6,7 @@
     'category': 'crm',
     'summary': 'sekolah',
     'description': """
+    Modul yang digunakan untuk mengelola data sekolah
 """,
     'author': 'Bayuik',
     'website': 'https://www.bayuik.my.id/',

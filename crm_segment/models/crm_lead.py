@@ -10,3 +10,10 @@ class Lead(models.Model):
         ('pemerintahan', 'Pemerintahan'), ('swasta', 'Swasta'), ('lainnya', 'Lainnya')
     ], 'Customer Segment')
     product_segment_id = fields.Many2one('product.segment', 'Product Segment')
+    project_task_ids = fields.One2many('project.task', 'lead_id', 'Project Task')
+
+
+class Task(models.Model):
+    _inherit = 'project.task'
+
+    lead_id = fields.Many2one('crm.lead', 'Lead')
