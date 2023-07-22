@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sekolah_siswa_user,sekolah.siswa.user,addons_sekolah.model_sekolah_siswa,addons_sekolah.group_sekolah_user,1,0,0,0
+access_sekolah_siswa.manager,sekolah.siswa.manager,addons_sekolah.model_sekolah_siswa,addons_sekolah.group_sekolah_manager,1,1,1,1
+
+access_sekolah_guru_user,sekolah.guru.user,addons_sekolah.model_sekolah_guru,addons_sekolah.group_sekolah_user,1,0,0,0
+access_sekolah_guru.manager,sekolah.guru.manager,addons_sekolah.model_sekolah_guru,addons_sekolah.group_sekolah_manager,1,1,1,1
+
+access_sekolah_jadwal_user,sekolah.jadwal.user,addons_sekolah.model_sekolah_jadwal,addons_sekolah.group_sekolah_user,1,0,0,0
+access_sekolah_jadwal.manager,sekolah.jadwal.manager,addons_sekolah.model_sekolah_jadwal,addons_sekolah.group_sekolah_manager,1,1,1,1
+
+access_sekolah_kelas_user,sekolah.kelas.user,addons_sekolah.model_sekolah_kelas,addons_sekolah.group_sekolah_user,1,0,0,0
+access_sekolah_kelas.manager,sekolah.kelas.manager,addons_sekolah.model_sekolah_kelas,addons_sekolah.group_sekolah_manager,1,1,1,1
+
+access_sekolah_mata_pelajaran_user,sekolah.mata.pelajaran.user,addons_sekolah.model_sekolah_mata_pelajaran,addons_sekolah.group_sekolah_user,1,0,0,0
+access_sekolah_mata_pelajaran.manager,sekolah.mata.pelajaran.manager,addons_sekolah.model_sekolah_mata_pelajaran,addons_sekolah.group_sekolah_manager,1,1,1,1

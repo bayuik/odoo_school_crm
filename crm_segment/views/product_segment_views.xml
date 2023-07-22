@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="product_segment_form" model="ir.ui.view">
+        <field name="name">product.segment.form</field>
+        <field name="model">product.segment</field>
+        <field name="arch" type="xml">
+            <tree string="Product Segment">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_product_segment" model="ir.actions.act_window">
+        <field name="name">Product Segment</field>
+        <field name="res_model">product.segment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="product_segment_menuitem" name="Product Segment" action="action_product_segment"
+              parent="crm.crm_menu_config" sequence="16"/>
+</odoo>

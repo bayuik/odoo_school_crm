@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="sekolah_siswa_tree" model="ir.ui.view">
+        <field name="name">sekolah.siswa.tree</field>
+        <field name="model">sekolah.siswa</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="nis"/>
+                <field name="jns_kelamin"/>
+                <field name="agama" optional="hide"/>
+                <field name="usia"/>
+                <field name="kelas_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="sekolah_siswa_form" model="ir.ui.view">
+        <field name="name">sekolah.siswa.form</field>
+        <field name="model">sekolah.siswa</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="nis"/>
+                            <field name="name"/>
+                            <field name="jns_kelamin"/>
+                            <field name="kelas_id"/>
+                            <field name="agama"/>
+                        </group>
+                        <group>
+                            <field name="nm_ayah"/>
+                            <field name="nm_ibu"/>
+                            <field name="tgl_lahir"/>
+                            <field name="usia"/>
+                            <field name="alamat"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sekolah_siswa" model="ir.actions.act_window">
+        <field name="name">Siswa</field>
+        <field name="res_model">sekolah.siswa</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="menu_sekolah" name="Sekolah" sequence="5"/>
+    <menuitem id="menu_sekolah_siswa" name="Siswa" parent="menu_sekolah" action="action_sekolah_siswa" sequence="1"/>
+    <menuitem id="menu_sekolah_guru" name="Guru" parent="menu_sekolah" action="action_sekolah_guru" sequence="2"/>
+    <menuitem id="menu_sekolah_kelas" name="Kelas" parent="menu_sekolah" action="action_sekolah_kelas" sequence="3"/>
+    <menuitem id="menu_sekolah_mata_pelajaran" name="Mata Pelajaran" parent="menu_sekolah"
+              action="action_sekolah_mata_pelajaran" sequence="4"/>
+    <menuitem id="menu_sekolah_jadwal" name="Jadwal" parent="menu_sekolah" action="action_sekolah_jadwal" sequence="5"/>
+</odoo>

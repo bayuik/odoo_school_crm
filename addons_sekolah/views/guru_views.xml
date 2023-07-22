@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="sekolah_guru_tree" model="ir.ui.view">
+        <field name="name">sekolah.guru.tree</field>
+        <field name="model">sekolah.guru</field>
+        <field name="arch" type="xml">
+            <tree string="Guru">
+                <field name="nip" optional="show"/>
+                <field name="name"/>
+                <field name="mata_pelajaran_id"/>
+                <field name="jns_kelamin" optional="hide"/>
+                <field name="usia" optional="hide"/>
+                <field name="no_telp" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="sekolah_guru_form" model="ir.ui.view">
+        <field name="name">sekolah.guru.form</field>
+        <field name="model">sekolah.guru</field>
+        <field name="arch" type="xml">
+            <form string="Guru">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="nip"/>
+                            <field name="name"/>
+                            <field name="jns_kelamin"/>
+                            <field name="mata_pelajaran_id"/>
+                        </group>
+                        <group>
+                            <field name="tgl_lahir"/>
+                            <field name="usia"/>
+                            <field name="no_telp"/>
+                            <field name="alamat"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sekolah_guru" model="ir.actions.act_window">
+        <field name="name">Guru</field>
+        <field name="res_model">sekolah.guru</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
