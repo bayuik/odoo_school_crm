@@ -3,7 +3,7 @@
     'name': 'Sekolah',
     'version': '0.1.0',
     'license': 'LGPL-3',
-    'category': 'crm',
+    'category': 'employee',
     'summary': 'sekolah',
     'description': """
     Modul yang digunakan untuk mengelola data sekolah
